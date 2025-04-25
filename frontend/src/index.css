@@ -1,0 +1,109 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --primary-color: #6f4e37;
+  --secondary-color: #a67c52;
+  --accent-color: #d4a76a;
+  --background-color: #f9f5f0;
+  --text-color: #333;
+  --light-text: #777;
+  --dark-bg: #2c2c2c;
+  --dark-card: #3a3a3a;
+  --dark-text: #e0e0e0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.dark-mode .card {
+  background-color: var(--dark-card);
+  color: var(--dark-text);
+}
+
+.btn-coffee {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-coffee:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.coffee-card {
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.coffee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.progress-bar {
+  background-color: var(--primary-color);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.auth-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.dark-mode .auth-form {
+  background-color: var(--dark-card);
+}
+
+.about-section {
+  padding: 50px 0;
+}
+
+.about-image {
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card {
+  margin-bottom: 20px;
+}
+
+.coffee-type-badge {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
